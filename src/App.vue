@@ -1,36 +1,12 @@
 <script setup lang="ts">
 import {
   // RouterLink,
-  RouterView } from 'vue-router'
+  RouterView,
+} from 'vue-router'
 // import { ref } from 'vue';
 </script>
 
 <template>
-  <!-- <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    >
-
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">
-          Home
-        </RouterLink>
-        <RouterLink to="/about">
-          About
-        </RouterLink>
-      </nav>
-    </div>
-  </header> -->
-
-  <h1 class="text-3xl font-bold underline text-purple-300 ">
-    Hello world!
-  </h1>
-
   <RouterView />
 </template>
 

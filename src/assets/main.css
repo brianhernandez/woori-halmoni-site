@@ -7,20 +7,6 @@
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
 @media (min-width: 1024px) {
   body {
     display: flex;
@@ -33,3 +19,26 @@ a,
     padding: 0 2rem;
   }
 } */
+
+a {
+  transition: 0.4s;
+  padding: 3px;
+  border-bottom: 4px solid var(--grand-purple);
+}
+
+@media (hover: hover) {
+  a:hover {
+    border-bottom: 3px solid var(--auto-purple);
+  }
+}
+
+.text-gradient {
+  background: var(--grand-green);
+  background: linear-gradient(
+    to right,
+    var(--grand-green) 40%,
+    var(--auto-purple) 60%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
